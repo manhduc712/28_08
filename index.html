@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Tailwind CSS Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -223,6 +228,117 @@
         </p>
     </div>
 
+    <div class="bg-[#2c20df] text-white mt-10">
+        <div class="w-[1240px] mx-auto">
+            <div class="grid grid-cols-4 col-span-4 text-center py-10">
+                <div class="col-span-1 text-5xl font-bold">
+                    4,000+
+                    <p class="text-lg">Marketplace Products</p>
+                </div>
+                <div class="col-span-1 text-5xl font-bold">
+                    $6B
+                    <p class="text-lg">n Commissions Paid</p>
+                </div>
+                <div class="col-span-1 text-5xl font-bold">
+                    90%
+                    <p class="text-lg">Potential Commission Paid</p>
+                </div>
+                <div class="col-span-1 text-5xl font-bold">
+                    0
+                    <p class="text-lg">Missed Payments</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-24 w-[1320px] mx-auto">
+        <h2 class="text-center text-2xl font-bold">Top Product Categories Offered on ClickBank</h2>
+        <div class="owl-carousel mt-3">
+            <img src="img/HealthCategory-1.webp" />
+            <img src="img/SelfHelpCategory-1.webp" />
+            <img src="img/EBizCategory-1.webp" />
+            <img src="img/HomeCategory-1.webp" />
+            <img src="img/SportsCategory-1.webp" />
+        </div>
+    </div>
+
+    <div class=" w-[1320px] mx-auto flex flex-col items-center">
+        <button class="bg-[#2c20df] text-white px-10 py-3 rounded -mt-3 font-semibold">Join ClickBank</button>
+    </div>
+
+    <div class="mt-20 w-[1320px] mx-auto">
+        <h2 class="flex justify-center text-4xl font-bold text-[#10069f]">
+            Get Paid.
+            <p class="text-[#333] ml-2">Your Way</p>
+        </h2>
+
+        <div class="grid grid-cols-2 col-span-2 gap-12 mt-5">
+            <div class="col-span-1 bg-gray-100 rounded-[24px] shadow-lg">
+                <div class="py-5">
+                    <img src="img/Rev_Share.webp" width="350px" class="mx-auto" />
+                    <div class="px-14">
+                        <h2 class="text-2xl font-semibold text-center">Revenue Sharing</h2>
+                        <li class="ml-28 space-y-1">Get Paid a Percentage of Each Sale</li>
+                        <li class="ml-28 space-y-1">Earn More Cash With Upsells</li>
+                        <li class="ml-28 space-y-1">Generate Recurring Revenue With Rebills</li>
+                        <div class="flex flex-col items-center">
+                            <button class="bg-[#2c20df] text-white px-10 py-3 rounded mt-5 font-semibold">Start
+                                Here</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 bg-gray-100 rounded-[24px] px-2 py-2 shadow-lg">
+                <div class="py-5">
+                    <img src="img/CPA-1-1.webp" width="350px" class="mx-auto" />
+                    <div class="px-14">
+                        <h2 class="text-2xl font-semibold text-center">Cost Per Action (CPA)</h2>
+                        <li class="ml-28 space-y-1">Get Paid a Set Dollar Amount</li>
+                        <li class="ml-28 space-y-1">Scale Faster With Ad Spend</li>
+                        <li class="ml-28 space-y-1">Earnings Guaranteed (no refunds)</li>
+                        <div class="flex flex-col items-center">
+                            <button class="bg-[#2c20df] text-white px-10 py-3 rounded mt-5 font-semibold">Start
+                                Here</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="mt-10 w-[1320px] mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
+        <div class="md:col-span-1 w-[550px] my-auto ml-5">
+            <p class="uppercase text-[#10069f] text-xl font-bold">free course</p>
+            <h1 class="font-bold text-4xl">
+                How to Get Started as an Affiliate in 2023
+            </h1>
+            <p class="text-2xl font-semibold">
+                Ready to earn your first paycheck in half the time?
+                <span class="font-normal">We specifically designed this course to get you up and running as a
+                    ClickBank affiliate as quickly and efficiently as possible.</span>
+                The best part? It’s FREE!
+            </p>
+            <button class="bg-[#2c20df] text-white px-10 py-3 mt-10 rounded font-bold uppercase">enroll now</button>
+        </div>
+
+        <div class="my-auto relative w-full pb-[56.25%] -ml-10">
+            <div id="thumbnailContainer" class="absolute inset-0 flex items-center justify-center cursor-pointer">
+                <img src="https://i.vimeocdn.com/video/1650206280-5b7994e204cdf116944094a8235d89fc6ed47bca6b1475f88ddd458f8dc4cbe5-d.jpg?mw=80&q=85"
+                    class="w-full h-full object-cover" id="thumbnail">
+                <button class="p-4 rounded-full  absolute inset-0 flex items-center justify-center" id="play-button">
+                    <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M8 5v14l11-7z"></path>
+                    </svg>
+                </button>
+            </div>
+            <div id="videoContainer" class="hidden absolute inset-0">
+                <video class="w-full h-full object-cover" controls>
+                    <source src="" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
 
     <div class="mt-14">
         <div class="bg-[#2c20df] min-w-[1320px]">
@@ -315,6 +431,27 @@
             </div>
         </div>
     </div>
+
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                items: 3,
+                loop: true,
+                margin: 10,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            });
+        });
+    </script>
 </body>
 
 </html>
