@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Tailwind CSS Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-gray-50">
+    <div class="md:min-w-[1340px] mx-atuo">
+        <div class=" bg-white shadow-lg h-[92px] text-[#666] fixed top-0 left-0 right-0 z-10">
+            <nav class="w-[1340px] mx-auto flex py-8 text-xl">
+                <img src="img/clickbank.webp" class="h-7" width="230px" />
+
+                <div class="mx-auto hidden md:flex">
+                    <ul class="flex ml-[73px] justify-center space-x-10 font-semibold">
+                        <li class="hover:text-blue-900 cursor-pointer">Home</li>
+                        <li class="hover:text-blue-900 cursor-pointer">Affiliates</li>
+                        <li class="hover:text-blue-900 cursor-pointer">Sellers</li>
+                        <li class="hover:text-blue-900 cursor-pointer">Learn</li>
+                        <li class="hover:text-blue-900 cursor-pointer">Support</li>
+                    </ul>
+                </div>
+
+
+                <div class="flex ml-auto font-bold hidden md:flex">
+                    <p class="hover:text-blue-900 cursor-pointer">Log In</p>
+                    <button class="bg-[#2c20df] text-white px-6 py-3 rounded -mt-3 mr-2 ml-5">Start Here</button>
+                </div>
+
+                <div class="ml-auto">
+                    <button data-collapse-toggle="navbar-sticky" type="button"
+                        class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:focus:ring-gray-600"
+                        aria-controls="navbar-sticky" aria-expanded="false">
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
+                </div>
+            </nav>
+        </div>
+
+        <div class="w-[1340px] mx-auto mt-40">
+            <h1 class="text-center text-5xl font-bold mt-12">
+                <span class="text-[#10069f]">Quality</span>
+                Products.
+                <span class="text-[#10069f]">High</span>
+                Commnissions.
+                <span class="block mt-3"></span>
+                <span class="text-[#10069f]">Reliable</span>
+                Payments.
+            </h1>
+
+            <div class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="md:col-span-1 mt-14 w-[530px] ">
+                    <img src="https://clickbank.wpenginepowered.com/wp-content/uploads/2021/10/phones.png" class="">
+                </div>
+
+                <div class="my-auto text-2xl -ml-24 ">
+                    <h2 class="font-bold w-[480px] w-[100%] md:whitespace-normal">Welcome to the world’s leading
+                        affiliate
+                        marketplace!</h2>
+                    <p class="py-5">Over 100,000 affiliates worldwide choose ClickBank as their preferred marketplace,
+                        and
+                        for good reason: we’ve paid over $6 billion in commissions on time for more than 25 years!</p>
+                    <p class="w-[680px] w-[100%] md:whitespace-normal">Sign up for a free ClickBank account to access
+                        quality products, reliable tracking, and high commissions.</p>
+                    <button class="bg-[#2c20df] text-white px-6 py-3 rounded mt-5 font-semibold">Start Here</button>
+                </div>
+            </div>
+
+            <div class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="md:col-span-1 w-[500px] my-auto">
+                    <h2 class="font-bold text-2xl">
+                        Super Affiliate Success
+                    </h2>
+                    <p class="text-2xl">
+                        See how Jenn Lecompte went from struggling mother of four to generating over
+                        <span class="font-semibold">$5M</span>
+                        in revenue in
+                        just under 18 months.
+                    </p>
+                </div>
+
+                <div class="my-auto relative w-full -ml-24 h-0 pb-[56.25%]">
+                    <div id="thumbnailContainer"
+                        class="absolute inset-0 flex items-center justify-center cursor-pointer">
+                        <img src="https://i.vimeocdn.com/video/1601795679-1b600774d71d885e5d12a61a2af6b84a9768b32653fd84dcd61ee1390f213293-d?mw=700&mh=393"
+                            class="w-full h-full object-cover" id="thumbnail">
+                        <button
+                            class="p-4 rounded-full opacity-75 hover:opacity-100 absolute inset-0 flex items-center justify-center"
+                            id="play-button">
+                            <svg class="w-12 h-12 text-white" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M8 5v14l11-7z"></path>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="videoContainer" class="hidden absolute inset-0">
+                        <video class="w-full h-full object-cover" controls>
+                            <source src="" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="">
+        <div class="bg-[#2c20df] min-w-[1340px]">
+            <div class="grid grid-cols-2 w-[1340px] mx-auto py-10">
+                <div class="col-span-1">
+                    <p class="text-white text-3xl mt-5">Subscribe and get affiliate marketing strategies sent straight
+                        to
+                        your inbox every month!</p>
+                </div>
+                <div class="col-span-1">
+                    <input type="text" placeholder="Email Address"
+                        class="w-full h-[45px] px-5 bg-[#2c20df] border-b-2 border-white">
+                    <button
+                        class="uppercase w-full mt-5 py-3 text-white hover:text-black hover:bg-white font-semibold border border-slate-300 rounded-md">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="w-[1340px] mx-auto mt-10">
+        <div class="grid grid-cols-4 col-span-4 text-xl cursor-pointer">
+            <div class="col-span-1">
+                <img src="img/clickbank.webp" />
+            </div>
+            <div class="col-span-1 ml-36">
+                <p class="text-xl font-semibold">Earn with ClickBank</p>
+                <ul class="py-2 space-y-2 ">
+                    <li class="text-[#333] hover:text-black">Affiliate</li>
+                    <li class="text-[#333] hover:text-black">Sell Your Product</li>
+                    <li class="text-[#333] hover:text-black">Client Support</li>
+                </ul>
+            </div>
+            <div class="col-span-1 ml-36">
+                <p class="text-xl font-semibold">Learn with ClickBank</p>
+                <ul class="py-2 space-y-2">
+                    <li class="text-[#333] hover:text-black">Affiliate Marketing Courses</li>
+                    <li class="text-[#333] hover:text-black">YouTube Channel</li>
+                    <li class="text-[#333] hover:text-black">Blog</li>
+                    <li class="text-[#333] hover:text-black">How To Make Money Online</li>
+                    <li class="text-[#333] hover:text-black">What Is Affiliate Marketing?</li>
+                </ul>
+            </div>
+            <div class="col-span-1 ml-36">
+                <p class="text-xl font-semibold">Company</p>
+                <ul class="py-2 space-y-2">
+                    <li class="text-[#333] hover:text-black">About ClickBank</li>
+                    <li class="text-[#333] hover:text-black">Careers</li>
+                    <li class="text-[#333] hover:text-black">Partners</li>
+                    <li class="text-[#333] hover:text-black">Integrations</li>
+                    <li class="text-[#333] hover:text-black">ClickBank Merchandise</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="mt-10">
+            <div class="flex text-xl font-semibold space-x-1 cursor-pointer">
+                <p class="px-2 border-r border-[#666] last:border-r-0">®Clickbank. All rights Reserved.</p>
+                <p class="px-1 text-[#0d6efd] hover:text-[#2c20df] border-r border-[#666] last:border-r-0">Terms of Use
+                </p>
+                <p class="px-1 text-[#0d6efd] hover:text-[#2c20df] last:border-r-0">Privacy Policy</p>
+            </div>
+            <div class="py-10">
+                <p class="px-2 font-semibold">
+                    ClickBank is the retailer of products on this site. ClickBank and Spark by ClickBank are registered
+                    trademarks of Click Sales, Inc., a Delaware corporation located at 1444 S. Entertainment Ave. Suite
+                    410 Boise, Idaho 83709 USA and used by permission. ClickBank’s role as a retailer does not
+                    constitute an endorsement, approval or review of these products or any claim, statement or opinions
+                    used in the promotion of these products.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
