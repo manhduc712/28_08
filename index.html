@@ -21,10 +21,10 @@
 </head>
 
 <body class="bg-gray-50">
-    <!--Navbar-->
-    <div class="md:min-w-[1340px] mx-atuo">
-        <div class=" bg-white shadow-lg h-[92px] text-[#666] fixed top-0 left-0 right-0 z-10">
-            <nav class="w-[1340px] mx-auto flex py-8 text-xl">
+
+    <div class="md:w-[1320px] mx-auto">
+        <div class="bg-white shadow-lg h-[92px] text-[#666] fixed top-0 left-0 right-0 z-10">
+            <nav class="w-[1320px] mx-auto flex py-8 text-xl">
                 <img src="img/clickbank.webp" class="h-7" width="230px" />
 
                 <div class="mx-auto hidden md:flex">
@@ -37,13 +37,12 @@
                     </ul>
                 </div>
 
-
-                <div class="flex ml-auto font-bold hidden md:flex">
+                <div class=" hidden md:flex font-bold">
                     <p class="hover:text-blue-900 cursor-pointer">Log In</p>
                     <button class="bg-[#2c20df] text-white px-6 py-3 rounded -mt-3  ml-5">Start Here</button>
                 </div>
 
-                <div class="ml-auto">
+                <div class="md:hidden ml-auto">
                     <button data-collapse-toggle="navbar-sticky" type="button"
                         class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:focus:ring-gray-600"
                         aria-controls="navbar-sticky" aria-expanded="false">
@@ -57,7 +56,7 @@
             </nav>
         </div>
 
-        <div class="w-[1340px] mx-auto mt-40">
+        <div class="mt-40">
             <h1 class="text-center text-5xl font-bold mt-12">
                 <span class="text-[#10069f]">Quality</span>
                 Products.
@@ -87,7 +86,7 @@
             </div>
 
             <div class="mt-3 grid grid-cols-1 md:grid-cols-2 gap-6">
-                <div class="md:col-span-1 w-[500px] my-auto">
+                <div class="md:col-span-1 w-[550px] my-auto ml-5">
                     <h2 class="font-bold text-2xl">
                         Super Affiliate Success
                     </h2>
@@ -99,7 +98,7 @@
                     </p>
                 </div>
 
-                <div class="my-auto relative w-full -ml-24 h-0 pb-[56.25%]">
+                <div class="my-auto relative w-full pb-[56.25%] -ml-10">
                     <div id="thumbnailContainer"
                         class="absolute inset-0 flex items-center justify-center cursor-pointer">
                         <img src="https://i.vimeocdn.com/video/1601795679-1b600774d71d885e5d12a61a2af6b84a9768b32653fd84dcd61ee1390f213293-d?mw=700&mh=393"
@@ -122,14 +121,14 @@
         </div>
     </div>
 
-    <div class="mt-10 bg-[#f1f3fe] ">
+    <div class="mt-10 bg-[#f1f3fe]">
         <div class="text-center font-semibold text-4xl">
             <p class="py-12">How We Help You
                 <span class="font-bold text-[#10069f]">Earn</span>
             </p>
         </div>
 
-        <div class="grid grid-cols-3 col-span-3 w-[1340px] mx-auto gap-5">
+        <div class="grid grid-cols-1 md:grid-cols-3 col-span-3 w-[1320px] mx-auto gap-5">
             <div class="col-span-1 bg-white rounded-[24px] shadow-lg ">
                 <div class="py-20">
                     <img src="img/AP-reliable-fast-payments-300x300.png" width="196px" class="mx-auto" />
@@ -209,10 +208,25 @@
         </div>
     </div>
 
+    <div class="mt-32 w-[1320px] mx-auto flex flex-col items-center">
+        <button class="bg-[#2c20df] text-white px-6 py-3 rounded -mt-3">Start Here</button>
+        <h2 class="mt-10 text-3xl font-semibold">Products You Believe In.</h2>
+        <span class="font-bold text-4xl text-[#10069f]">Payments You Can Rely On.</span>
+        <p class="w-[1200px] text-center mt-2 font-semibold">
+            As an affiliate, you can make money without creating your own products to sell. But how do you find quality
+            products worth promoting? At ClickBank, we make affiliate marketing easy. Our vast marketplace features more
+            than 4,000 quality products listed by thousands of sellers.
+        </p>
+        <p class="w-[1100px] text-center mt-2 font-semibold">
+            To date, we’ve paid out more than $6 billion in affiliate commissions, and we’ve never missed a payment to
+            anyone. Take the uncertainty out of affiliate marketing – grow your business with ClickBank.
+        </p>
+    </div>
+
 
     <div class="mt-14">
-        <div class="bg-[#2c20df] min-w-[1340px]">
-            <div class="grid grid-cols-2 w-[1340px] mx-auto py-10">
+        <div class="bg-[#2c20df] min-w-[1320px]">
+            <div class="grid grid-cols-2 mx-auto py-10">
                 <div class="col-span-1">
                     <p class="text-white text-3xl mt-5">Subscribe and get affiliate marketing strategies sent straight
                         to
@@ -229,11 +243,11 @@
     </div>
 
     <!--FOOTER-->
-    <div class="w-[1340px] mx-auto mt-10">
-        <div class="grid grid-cols-4 col-span-4 text-xl cursor-pointer">
-            <div class="col-span-1">
-                <img src="img/clickbank.webp" />
-                <ul class="py-5 space-x-1">
+    <div class="w-[1320px] mx-auto mt-10">
+        <div class="grid md:grid-cols-4 col-span-4 text-xl cursor-pointer">
+            <div class="col-span-1 text-center md:text-left">
+                <img src="img/clickbank.webp" class="right-0 left-0 mx-auto" />
+                <ul class="py-5 space-x-1 md:ml-10">
                     <li class="inline-block">
                         <img src="img/facebook.png" width="30" />
                     </li>
@@ -251,16 +265,16 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-span-1 ml-36">
+            <div class="col-span-1 text-center md:text-left md:ml-36 ">
                 <p class="text-xl font-semibold">Earn with ClickBank</p>
-                <ul class="py-2 space-y-2 ">
+                <ul class="py-2 md:space-y-2 ">
                     <li class="text-[#333] hover:text-black">Affiliate</li>
                     <li class="text-[#333] hover:text-black">Sell Your Product</li>
                     <li class="text-[#333] hover:text-black">Client Support</li>
                 </ul>
             </div>
-            <div class="col-span-1 ml-36">
-                <p class="text-xl font-semibold">Learn with ClickBank</p>
+            <div class="col-span-1 text-center md:text-left md:ml-36">
+                <p class="text-xl font-semibold ">Learn with ClickBank</p>
                 <ul class="py-2 space-y-2">
                     <li class="text-[#333] hover:text-black">Affiliate Marketing Courses</li>
                     <li class="text-[#333] hover:text-black">YouTube Channel</li>
@@ -269,7 +283,7 @@
                     <li class="text-[#333] hover:text-black">What Is Affiliate Marketing?</li>
                 </ul>
             </div>
-            <div class="col-span-1 ml-36">
+            <div class="col-span-1 text-center md:text-left md:ml-36">
                 <p class="text-xl font-semibold">Company</p>
                 <ul class="py-2 space-y-2">
                     <li class="text-[#333] hover:text-black">About ClickBank</li>
@@ -281,15 +295,17 @@
             </div>
         </div>
 
-        <div class="mt-10">
-            <div class="flex text-xl font-semibold space-x-1 cursor-pointer">
-                <p class="px-2 border-r border-[#666] last:border-r-0">®Clickbank. All rights Reserved.</p>
-                <p class="px-1 text-[#0d6efd] hover:text-[#2c20df] border-r border-[#666] last:border-r-0">Terms of Use
-                </p>
-                <p class="px-1 text-[#0d6efd] hover:text-[#2c20df] last:border-r-0">Privacy Policy</p>
-            </div>
+        <div class="mt-10 text-center md:text-left">
+            <p>
+                ®Clickbank. All rights Reserved.
+                <span class="px-1 ml-1 text-[#0d6efd] hover:text-[#2c20df] border-l border-[#666] last:border-r-0">Terms
+                    of Use</span>
+                <span class="px-1 text-[#0d6efd] hover:text-[#2c20df] border-l border-[#666] last:border-r-0">Privacy
+                    Policy</span>
+            </p>
+
             <div class="py-10">
-                <p class="px-2 font-semibold">
+                <p class="px-2 font-semibold md:w-full w-[900px] mx-auto">
                     ClickBank is the retailer of products on this site. ClickBank and Spark by ClickBank are registered
                     trademarks of Click Sales, Inc., a Delaware corporation located at 1444 S. Entertainment Ave. Suite
                     410 Boise, Idaho 83709 USA and used by permission. ClickBank’s role as a retailer does not
