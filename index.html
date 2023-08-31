@@ -2,1492 +2,951 @@
 <html lang="en">
 
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Your Tailwind CSS</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-	<link rel="stylesheet"
-		href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-	<script src="https://cdn.tailwindcss.com"></script>
-	<link rel="preconnect" href="https://fonts.googleapis.com">
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
-		rel="stylesheet">
-	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
-	<link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Tailwind CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body class="font-[Poppins] bg-gray-200 h-screen">
-	<nav class="bg-white border-gray-200 lg:fixed lg:top-0 lg:left-0 lg:right-0">
-		<div class="lg:container relative mx-auto p-4">
-			<div class="grid grid-cols-1 lg:grid-cols-3">
-				<div class="grid grid-cols-2 lg:grid-cols-1">
-					<a href="#" class="my-auto cursor-pointer">
-						<img src="img/clickbank.webp" class="" alt="Logo" />
-					</a>
-					<button data-collapse-toggle="mega-menu-full" type="button"
-						class="inline-flex ml-auto items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-						aria-controls="mega-menu-full" aria-expanded="false">
-						<span class="sr-only">Open main menu</span>
-						<svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-							viewBox="0 0 17 14">
-							<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-								d="M1 1h15M1 7h15M1 13h15" />
-						</svg>
-					</button>
+    <nav class="bg-white border-gray-200 lg:fixed lg:top-0 lg:left-0 lg:right-0">
+        <div class="lg:container relative mx-auto p-4">
+            <div class="grid grid-cols-1 lg:grid-cols-3">
+                <div class="grid grid-cols-2 lg:grid-cols-1">
+                    <a href="#" class="my-auto cursor-pointer">
+                        <img src="img/clickbank.webp" class="" alt="Logo" />
+                    </a>
+                    <button data-collapse-toggle="mega-menu-full" type="button"
+                        class="inline-flex ml-auto items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+                        aria-controls="mega-menu-full" aria-expanded="false">
+                        <span class="sr-only">Open main menu</span>
+                        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 17 14">
+                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M1 1h15M1 7h15M1 13h15" />
+                        </svg>
+                    </button>
 
 
-				</div>
+                </div>
 
-				<div id="mega-menu-full"
-					class="hidden w-full block md:w-full md:order-1 lg:col-span-2 lg:justify-between lg:flex">
-					<ul
-						class="flex flex-col  lg:flex-row font-medium p-4 md:p-0 mt-4 rounded-lg bg-gray-50 lg:space-x-8 md:mt-0 md:border-0 bg-white">
-						<li class="md:col-span-2">
-							<a href="#" class="cursor-pointer font-medium inline-flex items-center py-5">Home</a>
-						</li>
+                <div id="mega-menu-full"
+                    class="hidden w-full block md:w-full md:order-1 lg:col-span-2 lg:justify-between lg:flex">
+                    <ul
+                        class="flex flex-col  lg:flex-row font-medium p-4 md:p-0 mt-4 rounded-lg bg-gray-50 lg:space-x-8 md:mt-0 md:border-0 bg-white">
+                        <li class="md:col-span-2">
+                            <a href="#" class="cursor-pointer font-medium inline-flex items-center py-5">Home</a>
+                        </li>
 
-						<li id="mega-menu-full-dropdown-button" data-dropdown-toggle="mega-menu-full-dropdown"
-							class="cursor-pointer font-medium inline-flex items-center py-5" type="button">
-							Affiliate
-							<div id="mega-menu-full-dropdown"
-								class=" hidden mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y w-full dropdownMenu ">
-								<div class="grid px-4 py-5 mx-auto text-gray-900 sm:grid-cols-4 md:px-1">
-									<ul>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Online Stores</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Segmentation</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Marketing CRM</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-									</ul>
-									<ul>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Online Stores</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Segmentation</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Marketing CRM</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-									</ul>
-									<ul>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Online Stores</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Segmentation</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Marketing CRM</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-									</ul>
-									<ul>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Online Stores</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Segmentation</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Marketing CRM</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</li>
-
-						<li id="mega-menu-full-dropdown-button" data-dropdown-toggle="mega-menu-full-dropdown-sellers"
-							class="cursor-pointer font-medium text-center inline-flex items-center py-5" type="button">
-							Sellers
-
-							<div id="mega-menu-full-dropdown-sellers"
-								class=" hidden mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y w-full dropdownMenu">
-								<div
-									class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 sm:grid-cols-4 md:px-1">
-									<ul>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Sellers</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Segmentation</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Marketing CRM</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-									</ul>
-									<ul>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Online Stores</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Segmentation</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Marketing CRM</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-									</ul>
-									<ul>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Online Stores</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Segmentation</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Marketing CRM</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-									</ul>
-									<ul>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Online Stores</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Segmentation</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Marketing CRM</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</li>
-
-						<li id="mega-menu-full-dropdown-button" data-dropdown-toggle="mega-menu-full-dropdown-learn"
-							class="cursor-pointer font-medium text-center inline-flex items-center py-5" type="button">
-							Learn
-							<div id="mega-menu-full-dropdown-learn"
-								class=" hidden mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y w-full dropdownMenu">
-								<div
-									class="grid max-w-screen-xl px-4 py-5 mx-auto text-gray-900 sm:grid-cols-4 md:px-1">
-									<ul>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Learn</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Segmentation</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Marketing CRM</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-									</ul>
-									<ul>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Online Stores</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Segmentation</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Marketing CRM</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-									</ul>
-									<ul>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Online Stores</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Segmentation</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Marketing CRM</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-									</ul>
-									<ul>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Online Stores</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Segmentation</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-										<li>
-											<a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
-												<div class="font-semibold">Marketing CRM</div>
-												<span class="text-sm text-gray-500 dark:text-gray-400">Connect with
-													third-party tools
-													that
-													you're already using.</span>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</li>
-
-						<li>
-							<a href="#"
-								class="cursor-pointer font-medium text-center inline-flex items-center py-5">Support</a>
-						</li>
-
-
-
-					</ul>
-					<div class="place-items-end place-self-center  w-full lg:flex md:w-auto md:order-1 lg:grid-cols-1 ">
-						<ul
-							class="flex font-medium p-4 md:p-0 mt-4 rounded-lg flex-row space-x-8 md:mt-0 md:border-0 justify-center  ">
-							<li>
-								<a href="#" class="block mt-2">Log In</a>
-							</li>
-							<li>
-								<a href="#" class="block mt-2 hidden lg:block">Find My Order</a>
-							</li>
-							<li>
-								<a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded ">Start
-									Here</a>
-							</li>
-
-						</ul>
-					</div>
-				</div>
-			</div>
-		</div>
-	</nav>
-	<!-- <div class="w-full">
-        <div class="bg-white shadow-lg h-[75px] text-[#666] w-full ">
-            <nav class=" flex items-center lg:justify-evenly justify-between w-full mr-0">
-                <img src="img/clickbank.webp" class="h-7 ml-[2rem] mt-2" width="230px" />
-                <div class="lg:flex hidden w-full lg:w-auto flex-col" id="navbar-default">
-                    <ul class="flex ml-[73px] justify-center space-x-10 font-semibold">
-                        <li class="hover:text-blue-900 cursor-pointer py-5">Home</li>
-                        <li id="multiLevelDropdownButton" data-dropdown-toggle="dropdown"
-                            class="cursor-pointer focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-center inline-flex items-center dark:focus:ring-blue-800 py-5"
-                            type="button"> Affiliates
-                            
-                            <div id="dropdown"
-                                class="hidden bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-200 p-[1rem] w-4/5">
-                                <div class="grid grid-cols-4 gap-4">
-                                    <div>
-                                        <strong class="border-b-2 border-indigo-500">
+                        <li id="mega-menu-full-dropdown-button" data-dropdown-toggle="mega-menu-full-dropdown"
+                            class="cursor-pointer font-medium inline-flex items-center py-5" type="button">
+                            Affiliate
+                            <div id="mega-menu-full-dropdown"
+                                class=" hidden mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y w-full dropdownMenu ">
+                                <div class="grid px-4 py-5 mx-auto text-gray-900 sm:grid-cols-4 md:px-1 gap-4">
+                                    <ul>
+                                        <div class="p-3 border-b-2 border-gray-100">
                                             AFFILIATE <span class="text-green-600">SOLUTIONS</span>
-                                        </strong>
-
-                                        <ul>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        Affiliate Overview</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Learn how all kinds of affiliates can build their business with
-                                                        ClickBank</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        Media Buyers</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Learn how scaled media buyer affiliates find support and success
-                                                        with ClickBank</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        Email Marketers</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Learn how email marketer affiliates monetize their email lists
-                                                        with ClickBank</p>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <strong class="border-b-2 border-indigo-500">
+                                        </div>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Affiliate Overview</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Learn how all
+                                                    kinds of affiliates can build their business with
+                                                    ClickBank
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Media Buyers</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Learn how scaled
+                                                    media buyer affiliates find support and success
+                                                    with ClickBank
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Email Marketers</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Learn how email
+                                                    marketer affiliates monetize their email lists
+                                                    with ClickBank
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <div class="p-3 border-b-2 border-gray-100">
                                             AFFILIATE <span class="text-green-600">RESOURCES</span>
-                                        </strong>
-
-                                        <ul>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark text-left">
-                                                        Getting Started on ClickBank <span
-                                                            class="uppercase bg-[#271dda] text-white px-2 rounded-md">Popular</span>
-                                                    </h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Free beginner affiliate course to set up account and start
-                                                        making sales on ClickBank!</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        Affiliate Marketing Events</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Here are the essential affiliate marketing conferences and
-                                                        events to attend this year</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        Platinum Program</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Learn about the exclusive benefits that top ClickBank sellers
-                                                        enjoy</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        CPA on ClickBank</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Get to know ClickBank’s cost-per-action commission structure and
-                                                        what makes it unique</p>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <strong class="border-b-2 border-indigo-500">
+                                        </div>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Getting Started on ClickBank<span
+                                                        class="uppercase bg-[#271dda] text-white px-2 ml-2 rounded-md ">popular</span>
+                                                </div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Free beginner
+                                                    affiliate course to set up account and start
+                                                    making sales on ClickBank!
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Affiliate Marketing Events</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Here are the
+                                                    essential affiliate marketing conferences and
+                                                    events to attend this year
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Platinum Program</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Learn about the
+                                                    exclusive benefits that top ClickBank sellers
+                                                    enjoy
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">CPA on ClickBank</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Get to know
+                                                    ClickBank’s cost-per-action commission structure and
+                                                    what makes it unique
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <div class="p-3 border-b-2 border-gray-100">
                                             AFFILIATE <span class="text-green-600">RESOURCES</span>
-                                        </strong>
-
-                                        <ul>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        How ClickBank Works</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Discover the nuts and bolts of the ClickBank
-                                                        experience</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        Help Center</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Learn all things ClickBank with this comprehensive technical
-                                                        guide</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark text-left">
-                                                        ClickBank Top Offer <span
-                                                            class="uppercase bg-[#271dda] text-white px-2 rounded-md">Popular</span>
-                                                    </h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        View the latest top offers on ClickBank’s
-                                                        marketplace</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        Integrations</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        View the tools, services, and software that integrate seamlessly
-                                                        with ClickBank’s platform</p>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <strong class="border-b-2 border-indigo-500">
+                                        </div>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">How ClickBank Works</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Discover the nuts
+                                                    and bolts of the ClickBank
+                                                    experience
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Help Center</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Learn all things
+                                                    ClickBank with this comprehensive technical
+                                                    guide
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">ClickBank Top Offer <span
+                                                        class="uppercase bg-[#271dda] text-white px-2 ml-2 rounded-md ">popular</span>
+                                                </div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">View the latest
+                                                    top offers on ClickBank’s
+                                                    marketplace
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Integrations</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">View the tools,
+                                                    services, and software that integrate seamlessly
+                                                    with ClickBank’s platform
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <div class="p-3 border-b-2 border-gray-100">
                                             AFFILIATE <span class="text-green-600">GUIDES</span>
-                                        </strong>
-
-                                        <ul>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <img src="img/3-steps-new.jpg" class="w-full" />
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        How to Make Money Online</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        17 Ways to Make Money Online in 2023</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        What is Affiliate Marketing</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        A ClickBank official guide on how to become an affiliate
-                                                        marketer</p>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                        </div>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <img src="img/3-steps-new.jpg" class="w-full" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">How to Make Money Online</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">17 Ways to Make
+                                                    Money Online in 2023</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">What is Affiliate Marketing</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">A ClickBank
+                                                    official guide on how to become an affiliate
+                                                    marketer
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </li>
 
-                        <li id="multiLevelDropdownButton" data-dropdown-toggle="dropdown"
-                            class="cursor-pointer focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-center inline-flex items-center dark:focus:ring-blue-800 py-5"
-                            type="button"> Sellers
-                            
-                            <div id="dropdown"
-                                class="hidden bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-200 p-[1rem] w-4/5">
-                                <div class="grid grid-cols-4 gap-4">
-                                    <div>
-                                        <strong class="border-b-2 border-indigo-500">
-                                            AFFILIATE <span class="text-green-600">SOLUTIONS</span>
-                                        </strong>
+                        <li id="mega-menu-full-dropdown-button" data-dropdown-toggle="mega-menu-full-dropdown-sellers"
+                            class="cursor-pointer font-medium inline-flex py-5" type="button">
+                            Sellers
 
-                                        <ul>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        Affiliate Overview</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Learn how all kinds of affiliates can build their business with
-                                                        ClickBank</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        Media Buyers</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Learn how scaled media buyer affiliates find support and success
-                                                        with ClickBank</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        Email Marketers</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Learn how email marketer affiliates monetize their email lists
-                                                        with ClickBank</p>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <strong class="border-b-2 border-indigo-500">
-                                            AFFILIATE <span class="text-green-600">RESOURCES</span>
-                                        </strong>
-
-                                        <ul>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark text-left">
-                                                        Getting Started on ClickBank <span
-                                                            class="uppercase bg-[#271dda] text-white px-2 rounded-md">Popular</span>
-                                                    </h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Free beginner affiliate course to set up account and start
-                                                        making sales on ClickBank!</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        Affiliate Marketing Events</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Here are the essential affiliate marketing conferences and
-                                                        events to attend this year</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        Platinum Program</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Learn about the exclusive benefits that top ClickBank sellers
-                                                        enjoy</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        CPA on ClickBank</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Get to know ClickBank’s cost-per-action commission structure and
-                                                        what makes it unique</p>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <strong class="border-b-2 border-indigo-500">
-                                            AFFILIATE <span class="text-green-600">RESOURCES</span>
-                                        </strong>
-
-                                        <ul>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        How ClickBank Works</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Discover the nuts and bolts of the ClickBank
-                                                        experience</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        Help Center</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Learn all things ClickBank with this comprehensive technical
-                                                        guide</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark text-left">
-                                                        ClickBank Top Offer <span
-                                                            class="uppercase bg-[#271dda] text-white px-2 rounded-md">Popular</span>
-                                                    </h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        View the latest top offers on ClickBank’s
-                                                        marketplace</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        Integrations</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        View the tools, services, and software that integrate seamlessly
-                                                        with ClickBank’s platform</p>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <strong class="border-b-2 border-indigo-500">
-                                            AFFILIATE <span class="text-green-600">GUIDES</span>
-                                        </strong>
-
-                                        <ul>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <img src="img/3-steps-new.jpg" class="w-full" />
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        How to Make Money Online</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        17 Ways to Make Money Online in 2023</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        What is Affiliate Marketing</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        A ClickBank official guide on how to become an affiliate
-                                                        marketer</p>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                            <div id="mega-menu-full-dropdown-sellers"
+                                class=" hidden mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y w-full dropdownMenu">
+                                <div class="grid px-4 py-5 mx-auto text-gray-900 sm:grid-cols-4 md:px-1 gap-4">
+                                    <ul>
+                                        <div class="p-3 border-b-2 border-gray-100">
+                                            SELLER <span class="text-green-600">SOLUTIONS</span>
+                                        </div>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Seller Overview</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Learn how all
+                                                    kinds of product owners and sellers can grow their business with
+                                                    affiliates on ClickBank
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">E-commerce Brands</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Learn how
+                                                    e-commerce brands grow their affiliate programs and acquire new
+                                                    customers with ClickBank
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Help Center</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Learn all things
+                                                    ClickBank with this comprehensive technical guide.
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <div class="p-3 border-b-2 border-gray-100">
+                                            SELLER <span class="text-green-600">RESOURCES</span>
+                                        </div>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Ecom to DR Success Center<span
+                                                        class="uppercase bg-[#271dda] text-white px-2 ml-2 rounded-md ">new</span>
+                                                </div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Find out how to
+                                                    transform your ecommerce product into an attractive direct response
+                                                    offer for performance affiliates to promote
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">How ClickBank Works</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Discover the nuts
+                                                    and bolts of the ClickBank experience for both sellers and
+                                                    affiliates
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Affiliate Marketing Events</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Here are the
+                                                    essential affiliate marketing conferences and events to attend this
+                                                    year
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Platinum Program</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Learn about the
+                                                    exclusive benefits that top ClickBank sellers enjoy
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <div class="p-3 border-b-2 border-gray-100">
+                                            SELLER <span class="text-green-600">RESOURCES</span>
+                                        </div>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Seller Launch Checklist<span
+                                                        class="uppercase bg-[#271dda] text-white px-2 ml-2 rounded-md ">popular</span>
+                                                </div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Learn how to
+                                                    onboard your product to ClickBank with a step by step guided
+                                                    tutorial
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">CPA on ClickBank</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Get to know
+                                                    ClickBank’s cost-per-action commission structure and what makes it
+                                                    unique
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Partners</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">See our
+                                                    handpicked selection of preferred ClickBank partners for every
+                                                    category
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Integrations</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">View the tools,
+                                                    services, and software that integrate seamlessly
+                                                    with ClickBank’s platform
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <div class="p-3 border-b-2 border-gray-100">
+                                            SELLER <span class="text-green-600">GUIDES</span>
+                                        </div>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">CPA Seller Guide</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">A ClickBank
+                                                    official guide on how to offer CPA in your affiliate program</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">How to Create an Affiliate Program</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Learn how your
+                                                    business can start it’s first affilaite program</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Become an Elite Affiliate Manager</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Find how you can
+                                                    make your affiliate program more optimized, profitable, and ready to
+                                                    scale
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </li>
 
-                        <li id="multiLevelDropdownButton" data-dropdown-toggle="dropdown"
-                            class="cursor-pointer focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium  text-center inline-flex items-center dark:focus:ring-blue-800 py-5"
-                            type="button"> Learn
-                            
-                            <div id="dropdown"
-                                class="hidden bg-white divide-y divide-gray-100 rounded-lg shadow dark:bg-gray-200 p-[1rem] w-4/5">
-                                <div class="grid grid-cols-4 gap-4">
-                                    <div>
-                                        <strong class="border-b-2 border-indigo-500">
-                                            AFFILIATE <span class="text-green-600">SOLUTIONS</span>
-                                        </strong>
+                        <li id="mega-menu-full-dropdown-button" data-dropdown-toggle="mega-menu-full-dropdown-learn"
+                            class="cursor-pointer font-medium inline-flex py-5" type="button">
+                            Learn
 
-                                        <ul>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        Affiliate Overview</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Learn how all kinds of affiliates can build their business with
-                                                        ClickBank</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        Media Buyers</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Learn how scaled media buyer affiliates find support and success
-                                                        with ClickBank</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        Email Marketers</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Learn how email marketer affiliates monetize their email lists
-                                                        with ClickBank</p>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <strong class="border-b-2 border-indigo-500">
-                                            AFFILIATE <span class="text-green-600">RESOURCES</span>
-                                        </strong>
+                            <div id="mega-menu-full-dropdown-learn"
+                                class=" hidden mt-1 border-gray-200 shadow-sm bg-gray-50 md:bg-white border-y w-full dropdownMenu">
+                                <div class="grid px-4 py-5 mx-auto text-gray-900 sm:grid-cols-4 md:px-1 gap-4">
+                                    <ul>
+                                        <div class="p-3 border-b-2 border-gray-100">
+                                            GETTING <span class="text-green-600">STARTED</span>
+                                        </div>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">How ClickBank Works</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Discover the nuts
+                                                    and bolts of the ClickBank experience for both sellers and
+                                                    affiliates
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Getting Started on ClickBank</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Free beginner
+                                                    affiliate course to set up your account and start making sales on
+                                                    ClickBank
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Affiliate Training<span
+                                                        class="uppercase bg-[#271dda] text-white px-2 ml-2 rounded-md ">new</span>
+                                                </div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Learn directly
+                                                    from ClickBank experts how to make your first $2,000 as an affiliate
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Help Center</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Learn all things
+                                                    ClickBank with this comprehensive technical guide
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
 
-                                        <ul>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark text-left">
-                                                        Getting Started on ClickBank <span
-                                                            class="uppercase bg-[#271dda] text-white px-2 rounded-md">Popular</span>
-                                                    </h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Free beginner affiliate course to set up account and start
-                                                        making sales on ClickBank!</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        Affiliate Marketing Events</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Here are the essential affiliate marketing conferences and
-                                                        events to attend this year</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        Platinum Program</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Learn about the exclusive benefits that top ClickBank sellers
-                                                        enjoy</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        CPA on ClickBank</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Get to know ClickBank’s cost-per-action commission structure and
-                                                        what makes it unique</p>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <strong class="border-b-2 border-indigo-500">
-                                            AFFILIATE <span class="text-green-600">RESOURCES</span>
-                                        </strong>
+                                    <ul>
+                                        <div class="p-3 border-b-2 border-gray-100">
+                                            CLICKBANK <span class="text-green-600">RESOURCES</span>
+                                        </div>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">ClickBank Top Offers<span
+                                                        class="uppercase bg-[#271dda] text-white px-2 ml-2 rounded-md ">popular</span>
+                                                </div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">View the latest
+                                                    top offers on ClickBank’s marketplace
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Affiliate Marketing Events</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Discover the
+                                                    essential affiliate marketing conferences and events to attend this
+                                                    year
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Affiliate Marketing Glossary</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Learn the most
+                                                    important affiliate marketing terms in this comprehensive glossary
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">How to Make Money Online<span
+                                                        class="uppercase bg-[#271dda] text-white px-2 ml-2 rounded-md ">popular</span>
+                                                </div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Learn about 17
+                                                    different popular ways to make money online
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
 
-                                        <ul>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        How ClickBank Works</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Discover the nuts and bolts of the ClickBank
-                                                        experience</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        Help Center</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        Learn all things ClickBank with this comprehensive technical
-                                                        guide</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark text-left">
-                                                        ClickBank Top Offer <span
-                                                            class="uppercase bg-[#271dda] text-white px-2 rounded-md">Popular</span>
-                                                    </h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        View the latest top offers on ClickBank’s
-                                                        marketplace</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        Integrations</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        View the tools, services, and software that integrate seamlessly
-                                                        with ClickBank’s platform</p>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div>
-                                        <strong class="border-b-2 border-indigo-500">
-                                            AFFILIATE <span class="text-green-600">GUIDES</span>
-                                        </strong>
-
-                                        <ul>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <img src="img/3-steps-new.jpg" class="w-full" />
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        How to Make Money Online</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        17 Ways to Make Money Online in 2023</p>
-                                                </a>
-                                            </li>
-                                            <li class="my-4">
-                                                <a href="#"
-                                                    class="block max-w-sm p-2 bg-white  rounded-lg shadow hover:bg-gray-100  ">
-                                                    <h6
-                                                        class="mb-2 text-1xl font-bold tracking-tight text-gray-900 text-dark  text-left">
-                                                        What is Affiliate Marketing</h6>
-                                                    <p class="font-normal text-gray-700 dark:text-gray-400 text-left ">
-                                                        A ClickBank official guide on how to become an affiliate
-                                                        marketer</p>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    <ul>
+                                        <div class="p-3 border-b-2 border-gray-100">
+                                            CLICKBANK <span class="text-green-600">RESOURCES</span>
+                                        </div>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">What is Affiliate Marketing?</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Discover what
+                                                    affiliate marketing is and how you can start your own business as an
+                                                    affiliate
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">Traffic Trends Report</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Find out where
+                                                    successful ClickBank clients are getting traffic for affiliate
+                                                    marketing
+                                                </span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-3 rounded-lg hover:bg-gray-100">
+                                                <div class="font-semibold">About ClickBank</div>
+                                                <span class="text-sm text-gray-500 dark:text-gray-400">Get to know the
+                                                    history and impact of ClickBank in the world of e-commerce and
+                                                    direct response
+                                                </span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul>
+                                        <li>
+                                            <a href="#" class="block p-1 rounded-lg hover:bg-gray-100">
+                                                <img src="img/3-steps-new.jpg" class="w-full" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-1 rounded-lg hover:bg-gray-100">
+                                                <img src="img/megamenu-subscribe.jpg" class="w-full" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-1 rounded-lg hover:bg-gray-100">
+                                                <img src="img/afilliated-graphic.jpg" class="w-full" />
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="block p-1 rounded-lg hover:bg-gray-100">
+                                                <img src="img/cb-blog-image.jpg" class="w-full" />
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </li>
-                        <li class="hover:text-blue-900 cursor-pointer py-5">Support</li>
+                        <li>
+                            <a href="#"
+                                class="cursor-pointer font-medium text-center inline-flex items-center py-5">Support</a>
+                        </li>
+                    </ul>
+                    <div class="place-items-end place-self-center  w-full lg:flex md:w-auto md:order-1 lg:grid-cols-1 ">
+                        <ul
+                            class="flex font-medium p-4 md:p-0 mt-4 rounded-lg flex-row space-x-8 md:mt-0 md:border-0 justify-center  ">
+                            <li>
+                                <a href="#" class="block mt-2">Log In</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block mt-2 hidden lg:block">Find My Order</a>
+                            </li>
+                            <li>
+                                <a href="#" class="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded ">Start
+                                    Here</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="justify-between items-center w-[80%] mx-auto lg:mt-[15vh]">
+        <div class="w-11/12 mx-auto">
+            <h1 class="text-center text-3xl md:text-4xl lg:text-5xl font-bold mt-12">
+                <span class="text-[#10069f]">Quality</span>
+                Products.
+                <span class="text-[#10069f]">High</span>
+                Commnissions.
+                <span class="block mt-3"></span>
+                <span class="text-[#10069f]">Reliable</span>
+                Payments.
+            </h1>
+        </div>
+
+
+        <div class="w-11/12 mx-auto mt-[3rem] w-[80%]">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-2 my-4">
+                <div class="m-auto responsive-image">
+                    <img src="https://clickbank.wpenginepowered.com/wp-content/uploads/2021/10/phones.png"
+                        class="w-full">
+                </div>
+
+                <div class="flex flex-col items-center justify-center my-[3rem]">
+                    <div>
+                        <h2 class="text-center md:text-left font-bold md:whitespace-normal">Welcome to the world’s
+                            leading
+                            affiliate
+                            marketplace!</h2>
+                        <p class="py-5 text-center md:text-left">Over 100,000 affiliates worldwide choose ClickBank as
+                            their
+                            preferred marketplace,
+                            and
+                            for good reason: we’ve paid over $6 billion in commissions on time for more than 25 years!
+                        </p>
+                        <p class=" md:whitespace-normal text-center md:text-left">Sign up for a free ClickBank account
+                            to
+                            access
+                            quality products, reliable tracking, and high commissions.</p>
+                        <div class="flex justify-center md:justify-start">
+                            <button class="bg-[#2c20df] text-white px-6 py-3 rounded mt-5 font-semibold">Start
+                                Here</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="w-11/12 mx-auto my-[5rem] ">
+            <div class="grid grid-cols-1 md:grid-cols-2">
+                <div class="my-auto  md:w-[80%] text-center md:text-left py-4">
+                    <h2 class="font-bold text-2xl">
+                        Super Affiliate Success
+                    </h2>
+                    <p class="text-2xl ">
+                        See how Jenn Lecompte went from struggling mother of four to generating over
+                        <span class="font-semibold">$5M</span>
+                        in revenue in
+                        just under 18 months.
+                    </p>
+                </div>
+
+                <div class="">
+                    <div id="thumbnailContainer" class="">
+                        <img src="https://i.vimeocdn.com/video/1601795679-1b600774d71d885e5d12a61a2af6b84a9768b32653fd84dcd61ee1390f213293-d?mw=300&mh=169"
+                            class="w-full h-full object-cover" id="thumbnail">
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="bg-[#f1f3fe] pb-[5rem]">
+        <div class="text-center font-semibold text-4xl">
+            <p class="py-12">How We Help You
+                <span class="font-bold text-[#10069f]">Earn</span>
+            </p>
+        </div>
+        <div class="w-11/12 mx-auto w-[80%]">
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 col-span-2  mx-auto gap-5">
+                <div class="col-span-1 bg-white rounded-[24px] shadow-lg ">
+                    <div class="py-[4re]">
+                        <img src="img/AP-reliable-fast-payments-300x300.png" width="196px" class="mx-auto" />
+                        <div class="text-center px-14">
+                            <h2 class="text-2xl font-semibold">Reliable Payments</h2>
+                            <p class="font-semibold mt-2">
+                                We have an impeccable reputation for reliable payments. ClickBank has never missed a
+                                payment
+                                since launching in 1999.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1 bg-white rounded-[24px] px-2 py-2 shadow-lg">
+                    <div class="py-[4re]">
+                        <img src="img/AP-top-performing-offers-300x300.png" width="196px" class="mx-auto" />
+                        <div class="text-center px-14">
+                            <h2 class="text-2xl font-semibold">Top-Performing Offers</h2>
+                            <p class="font-semibold mt-2">
+                                We offer some of the highest commissions in the industry, including Revenue Share and
+                                CPA.
+                                Our
+                                customized order forms lead to higher conversions.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1 bg-white rounded-[24px] px-2 py-2 shadow-lg">
+                    <div class="py-[4re]">
+                        <img src="img/AP-high-quality-products-300x300.png" width="196px" class="mx-auto" />
+                        <div class="text-center px-14">
+                            <h2 class="text-2xl font-semibold">High-Quality Products</h2>
+                            <p class="font-semibold mt-2">
+                                Comprehensive product approval ensures all products are vetted for FDA/FTC compliance,
+                                and
+                                we
+                                monitor product quality rates based on refunds.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1 bg-white rounded-[24px] px-2 py-2 shadow-lg">
+                    <div class="py-[4re]">
+                        <img src="img/AP-accurate-tracking-300x300.png" width="196px" class="mx-auto" />
+                        <div class="text-center px-14">
+                            <h2 class="text-2xl font-semibold">Accurate Tracking</h2>
+                            <p class="font-semibold mt-2">
+                                Our device-level tracking ensures you get paid for every single sale. We rank products
+                                by
+                                top
+                                conversions so you know how they are performing.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1 bg-white rounded-[24px] px-2 py-2 shadow-lg">
+                    <div class="py-[4re]">
+                        <img src="img/AP-dedicated-support-300x300.png" width="196px" class="mx-auto" />
+                        <div class="text-center px-14">
+                            <h2 class="text-2xl font-semibold">Dedicated Support</h2>
+                            <p class="font-semibold mt-2">
+                                Up-and-coming and premier businesses receive dedicated account management, plus access
+                                to
+                                exclusive networking events to build strategic partnerships.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-span-1 bg-white rounded-[24px] px-2 py-2 shadow-lg">
+                    <div class="py-[4re]">
+                        <img src="img/AP-training-and-education-300x300.png" width="196px" class="mx-auto" />
+                        <div class="text-center px-14">
+                            <h2 class="text-2xl font-semibold">Training & Education</h2>
+                            <p class="font-semibold mt-2">
+                                ClickBank’s Spark platform educates new and existing affiliates with in-depth online
+                                marketing
+                                training – created by our own team of experts.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="w-11/12 mx-auto my-[5rem] w-[80%]">
+        <div class="flex justify-center">
+            <button class="bg-[#2c20df] text-white px-6 py-3 rounded -mt-3">Start Here</button>
+        </div>
+
+        <div class="flex justify-center my-[3rem]">
+            <div class="text-center">
+                <h2 class="text-3xl font-semibold ">Products You Believe In.</h2>
+                <span class="font-bold text-4xl text-[#10069f] ">Payments You Can Rely On.</span>
+            </div>
+        </div>
+
+        <p class="text-center text-xl md:text-2xl my-[1rem]">
+            As an affiliate, you can make money without creating your own products to sell. But how do you find quality
+            products worth promoting? At ClickBank, we make affiliate marketing easy. Our vast marketplace features more
+            than 4,000 quality products listed by thousands of sellers.
+        </p>
+        <p class="text-center text-xl md:text-2xl my-[1rem]">
+            To date, we’ve paid out more than $6 billion in affiliate commissions, and we’ve never missed a payment to
+            anyone. Take the uncertainty out of affiliate marketing – grow your business with ClickBank.
+        </p>
+    </div>
+
+    <div class="bg-[#2c20df] text-white mt-10">
+        <div class="container mx-auto">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 col-span-4 text-center py-10 gap-12">
+                <div class="col-span-1 text-5xl font-bold">
+                    4,000+
+                    <p class="text-lg">Marketplace Products</p>
+                </div>
+                <div class="col-span-1 text-5xl font-bold">
+                    $6B
+                    <p class="text-lg">n Commissions Paid</p>
+                </div>
+                <div class="col-span-1 text-5xl font-bold">
+                    90%
+                    <p class="text-lg">Potential Commission Paid</p>
+                </div>
+                <div class="col-span-1 text-5xl font-bold">
+                    0
+                    <p class="text-lg">Missed Payments</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mt-24 container mx-auto">
+        <h2 class="text-center text-2xl font-bold">Top Product Categories Offered on ClickBank</h2>
+        <div class="owl-carousel mt-3">
+            <img src="img/HealthCategory-1.webp" />
+            <img src="img/SelfHelpCategory-1.webp" />
+            <img src="img/EBizCategory-1.webp" />
+            <img src="img/HomeCategory-1.webp" />
+            <img src="img/SportsCategory-1.webp" />
+        </div>
+    </div>
+
+    <div class="container mx-auto flex flex-col items-center">
+        <button class="bg-[#2c20df] text-white px-10 py-3 rounded -mt-3 font-semibold">Join ClickBank</button>
+    </div>
+
+    <div class="my-[5rem] w-11/12 mx-auto w-[80%]">
+        <h2 class="flex justify-center text-4xl font-bold text-[#10069f]">
+            Get Paid.
+            <p class="text-[#333] ml-2">Your Way</p>
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 col-span-2 gap-12 mt-5">
+            <div class="col-span-1 bg-gray-100 rounded-[24px] shadow-lg">
+                <div class="py-5">
+                    <img src="img/Rev_Share.webp" width="350px" class="mx-auto" />
+                    <div class="px-14">
+                        <h2 class="text-2xl font-semibold text-center">Revenue Sharing</h2>
+                        <li class=" space-y-1">Get Paid a Percentage of Each Sale</li>
+                        <li class=" space-y-1">Earn More Cash With Upsells</li>
+                        <li class=" space-y-1">Generate Recurring Revenue With Rebills</li>
+                        <div class="flex flex-col items-center ">
+                            <button class="bg-[#2c20df] text-white px-10 py-3 rounded mt-5 font-semibold">Start
+                                Here</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-span-1 bg-gray-100 rounded-[24px] px-2 py-2 shadow-lg">
+                <div class="py-5">
+                    <img src="img/CPA-1-1.webp" width="350px" class="mx-auto" />
+                    <div class="px-14">
+                        <h2 class="text-2xl font-semibold text-center">Cost Per Action (CPA)</h2>
+                        <li class=" space-y-1">Get Paid a Set Dollar Amount</li>
+                        <li class=" space-y-1">Scale Faster With Ad Spend</li>
+                        <li class=" space-y-1">Earnings Guaranteed (no refunds)</li>
+                        <div class="flex flex-col items-center">
+                            <button class="bg-[#2c20df] text-white px-10 py-3 rounded mt-5 font-semibold">Start
+                                Here</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="my-5 w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 w-[80%]">
+        <div class="md:col-span-1  my-auto">
+            <p class="uppercase text-[#10069f] text-xl font-bold text-center ">free course</p>
+            <h1 class="font-bold text-4xl text-center my-5">
+                How to Get Started as an Affiliate in 2023
+            </h1>
+            <p class="text-xl font-semibold text-center">
+                Ready to earn your first paycheck in half the time?
+                <span class="font-normal">We specifically designed this course to get you up and running as a
+                    ClickBank affiliate as quickly and efficiently as possible.</span>
+                The best part? It’s FREE!
+            </p>
+            <div class="flex justify-center">
+                <button class="bg-[#2c20df] text-white px-10 py-3 mt-10 rounded font-bold uppercase">enroll now</button>
+            </div>
+        </div>
+
+        <div class="my-auto w-full h-full">
+            <div id="thumbnailContainer" class=" inset-0 flex items-center justify-center cursor-pointer">
+                <img src="https://i.vimeocdn.com/video/1650206280-5b7994e204cdf116944094a8235d89fc6ed47bca6b1475f88ddd458f8dc4cbe5-d.jpg?mw=80&q=85"
+                    class="w-full h-full object-cover" id="thumbnail">
+            </div>
+            <div id="videoContainer" class="hidden  inset-0">
+                <video class="w-full h-full object-cover" controls>
+                    <source src="" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+
+    <div class="my-5 bg-[#2c20df]">
+        <div class="w-11/12 mx-auto w-[80%]">
+            <div class="grid  grid-cols-1 md:grid-cols-2 mx-auto py-10">
+                <div class="col-span-1">
+                    <p class="text-white text-2xl mt-5">Subscribe and get affiliate marketing strategies sent straight
+                        to your inbox every month!</p>
+                </div>
+                <div class="col-span-1 my-4">
+                    <input type="text" placeholder="Email Address"
+                        class="w-full h-[45px] px-5 bg-[#2c20df] border-b-2 border-white text-white">
+                    <button
+                        class="uppercase w-full mt-5 py-3 text-white hover:text-black hover:bg-white font-semibold border border-slate-300 rounded-md">Subscribe</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--FOOTER-->
+    <div class="w-11/12 mx-auto my-[3rem] lg:w-[80%]">
+        <div class="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-2 text-xl cursor-pointer mx-[4rem]">
+            <div class="col-span-1 mx-auto lg:text-left">
+                <img src="img/clickbank.webp" class="mx-auto md:mx-0" />
+                <div class="w-full space-x-8">
+                    <ul class="py-3 flex justify-center lg:justify-start py-4">
+                        <li class="inline-block p-1">
+                            <img src="img/facebook.png" width="30" />
+                        </li>
+                        <li class="inline-block p-1">
+                            <img src="img/twitter.png" width="30" />
+                        </li>
+                        <li class="inline-block p-1">
+                            <img src="img/instagram.png" width="30" />
+                        </li>
+                        <li class="inline-block p-1">
+                            <img src="img/youtube.png" width="30" />
+                        </li>
+                        <li class="inline-block p-1">
+                            <img src="img/linkedin.png" width="30" />
+                        </li>
                     </ul>
                 </div>
 
-                <div class="lg:flex hidden items-center font-bold">
-                    <p class="hover:text-blue-900 cursor-pointer">Log In</p>
-                    <button class="bg-[#2c20df] text-white px-6 py-3 rounded ml-5">Start Here</button>
+            </div>
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
+                <div class=" text-center lg:text-left mb-[1.5rem] ">
+                    <p class="text-xl font-semibold">Earn with ClickBank</p>
+                    <ul class="py-2 md:space-y-2 ">
+                        <li class="text-[#333] hover:text-black">Affiliate</li>
+                        <li class="text-[#333] hover:text-black">Sell Your Product</li>
+                        <li class="text-[#333] hover:text-black">Client Support</li>
+                    </ul>
                 </div>
-
-
-                <button data-collapse-toggle="navbar-default" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
-                    aria-controls="navbar-default" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 1h15M1 7h15M1 13h15" />
-                    </svg>
-                </button>
-            </nav>
+                <div class=" text-center lg:text-left mb-[1.5rem]">
+                    <p class="text-xl font-semibold ">Learn with ClickBank</p>
+                    <ul class="py-2 space-y-2">
+                        <li class="text-[#333] hover:text-black">Affiliate Marketing Courses</li>
+                        <li class="text-[#333] hover:text-black">YouTube Channel</li>
+                        <li class="text-[#333] hover:text-black">Blog</li>
+                        <li class="text-[#333] hover:text-black">How To Make Money Online</li>
+                        <li class="text-[#333] hover:text-black">What Is Affiliate Marketing?</li>
+                    </ul>
+                </div>
+                <div class=" text-center lg:text-left mb-[1.5rem]">
+                    <p class="text-xl font-semibold">Company</p>
+                    <ul class="py-2 space-y-2">
+                        <li class="text-[#333] hover:text-black">About ClickBank</li>
+                        <li class="text-[#333] hover:text-black">Careers</li>
+                        <li class="text-[#333] hover:text-black">Partners</li>
+                        <li class="text-[#333] hover:text-black">Integrations</li>
+                        <li class="text-[#333] hover:text-black">ClickBank Merchandise</li>
+                    </ul>
+                </div>
+            </div>
         </div>
-    </div> -->
 
-	<div class="justify-between items-center w-[80%] mx-auto lg:mt-[15vh]">
-		<div class="w-11/12 mx-auto">
-			<h1 class="text-center text-3xl md:text-4xl lg:text-5xl font-bold mt-12">
-				<span class="text-[#10069f]">Quality</span>
-				Products.
-				<span class="text-[#10069f]">High</span>
-				Commnissions.
-				<span class="block mt-3"></span>
-				<span class="text-[#10069f]">Reliable</span>
-				Payments.
-			</h1>
-		</div>
+        <div class="w-11/12 mx-auto my-5 text-center lg:text-left ">
+            <p class="text-xl">
+                ®Clickbank. All rights Reserved.
+                <span class="px-1 ml-1 text-[#0d6efd] hover:text-[#2c20df] border-l border-[#666] last:border-r-0">Terms
+                    of Use</span>
+                <span class="px-1 text-[#0d6efd] hover:text-[#2c20df] border-l border-[#666] last:border-r-0">Privacy
+                    Policy</span>
+            </p>
 
+            <div class="py-10">
+                <p class="">
+                    ClickBank is the retailer of products on this site. ClickBank and Spark by ClickBank are registered
+                    trademarks of Click Sales, Inc., a Delaware corporation located at 1444 S. Entertainment Ave. Suite
+                    410 Boise, Idaho 83709 USA and used by permission. ClickBank’s role as a retailer does not
+                    constitute an endorsement, approval or review of these products or any claim, statement or opinions
+                    used in the promotion of these products.
+                </p>
+            </div>
+        </div>
+    </div>
 
-		<div class="w-11/12 mx-auto mt-[3rem] w-[80%]">
-			<div class="grid grid-cols-1 md:grid-cols-2 gap-2 my-4">
-				<div class="m-auto responsive-image">
-					<img src="https://clickbank.wpenginepowered.com/wp-content/uploads/2021/10/phones.png"
-						class="w-full">
-				</div>
-
-				<div class="flex flex-col items-center justify-center my-[3rem]">
-					<div>
-						<h2 class="text-center md:text-left font-bold md:whitespace-normal">Welcome to the world’s
-							leading
-							affiliate
-							marketplace!</h2>
-						<p class="py-5 text-center md:text-left">Over 100,000 affiliates worldwide choose ClickBank as
-							their
-							preferred marketplace,
-							and
-							for good reason: we’ve paid over $6 billion in commissions on time for more than 25 years!
-						</p>
-						<p class=" md:whitespace-normal text-center md:text-left">Sign up for a free ClickBank account
-							to
-							access
-							quality products, reliable tracking, and high commissions.</p>
-						<div class="flex justify-center md:justify-start">
-							<button class="bg-[#2c20df] text-white px-6 py-3 rounded mt-5 font-semibold">Start
-								Here</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-		<div class="w-11/12 mx-auto my-[5rem] ">
-			<div class="grid grid-cols-1 md:grid-cols-2">
-				<div class="my-auto  md:w-[80%] text-center md:text-left py-4">
-					<h2 class="font-bold text-2xl">
-						Super Affiliate Success
-					</h2>
-					<p class="text-2xl ">
-						See how Jenn Lecompte went from struggling mother of four to generating over
-						<span class="font-semibold">$5M</span>
-						in revenue in
-						just under 18 months.
-					</p>
-				</div>
-
-				<div class="">
-					<div id="thumbnailContainer" class="">
-						<img src="https://i.vimeocdn.com/video/1601795679-1b600774d71d885e5d12a61a2af6b84a9768b32653fd84dcd61ee1390f213293-d?mw=300&mh=169"
-							class="w-full h-full object-cover" id="thumbnail">
-					</div>
-				</div>
-			</div>
-
-		</div>
-	</div>
-
-	<div class="bg-[#f1f3fe] pb-[5rem]">
-		<div class="text-center font-semibold text-4xl">
-			<p class="py-12">How We Help You
-				<span class="font-bold text-[#10069f]">Earn</span>
-			</p>
-		</div>
-		<div class="w-11/12 mx-auto w-[80%]">
-			<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 col-span-2  mx-auto gap-5">
-				<div class="col-span-1 bg-white rounded-[24px] shadow-lg ">
-					<div class="py-[4re]">
-						<img src="img/AP-reliable-fast-payments-300x300.png" width="196px" class="mx-auto" />
-						<div class="text-center px-14">
-							<h2 class="text-2xl font-semibold">Reliable Payments</h2>
-							<p class="font-semibold mt-2">
-								We have an impeccable reputation for reliable payments. ClickBank has never missed a
-								payment
-								since launching in 1999.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-span-1 bg-white rounded-[24px] px-2 py-2 shadow-lg">
-					<div class="py-[4re]">
-						<img src="img/AP-top-performing-offers-300x300.png" width="196px" class="mx-auto" />
-						<div class="text-center px-14">
-							<h2 class="text-2xl font-semibold">Top-Performing Offers</h2>
-							<p class="font-semibold mt-2">
-								We offer some of the highest commissions in the industry, including Revenue Share and
-								CPA.
-								Our
-								customized order forms lead to higher conversions.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-span-1 bg-white rounded-[24px] px-2 py-2 shadow-lg">
-					<div class="py-[4re]">
-						<img src="img/AP-high-quality-products-300x300.png" width="196px" class="mx-auto" />
-						<div class="text-center px-14">
-							<h2 class="text-2xl font-semibold">High-Quality Products</h2>
-							<p class="font-semibold mt-2">
-								Comprehensive product approval ensures all products are vetted for FDA/FTC compliance,
-								and
-								we
-								monitor product quality rates based on refunds.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-span-1 bg-white rounded-[24px] px-2 py-2 shadow-lg">
-					<div class="py-[4re]">
-						<img src="img/AP-accurate-tracking-300x300.png" width="196px" class="mx-auto" />
-						<div class="text-center px-14">
-							<h2 class="text-2xl font-semibold">Accurate Tracking</h2>
-							<p class="font-semibold mt-2">
-								Our device-level tracking ensures you get paid for every single sale. We rank products
-								by
-								top
-								conversions so you know how they are performing.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-span-1 bg-white rounded-[24px] px-2 py-2 shadow-lg">
-					<div class="py-[4re]">
-						<img src="img/AP-dedicated-support-300x300.png" width="196px" class="mx-auto" />
-						<div class="text-center px-14">
-							<h2 class="text-2xl font-semibold">Dedicated Support</h2>
-							<p class="font-semibold mt-2">
-								Up-and-coming and premier businesses receive dedicated account management, plus access
-								to
-								exclusive networking events to build strategic partnerships.
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-span-1 bg-white rounded-[24px] px-2 py-2 shadow-lg">
-					<div class="py-[4re]">
-						<img src="img/AP-training-and-education-300x300.png" width="196px" class="mx-auto" />
-						<div class="text-center px-14">
-							<h2 class="text-2xl font-semibold">Training & Education</h2>
-							<p class="font-semibold mt-2">
-								ClickBank’s Spark platform educates new and existing affiliates with in-depth online
-								marketing
-								training – created by our own team of experts.
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="w-11/12 mx-auto my-[5rem] w-[80%]">
-		<div class="flex justify-center">
-			<button class="bg-[#2c20df] text-white px-6 py-3 rounded -mt-3">Start Here</button>
-		</div>
-
-		<div class="flex justify-center my-[3rem]">
-			<div class="text-center">
-				<h2 class="text-3xl font-semibold ">Products You Believe In.</h2>
-				<span class="font-bold text-4xl text-[#10069f] ">Payments You Can Rely On.</span>
-			</div>
-		</div>
-
-		<p class="text-center text-xl md:text-2xl my-[1rem]">
-			As an affiliate, you can make money without creating your own products to sell. But how do you find quality
-			products worth promoting? At ClickBank, we make affiliate marketing easy. Our vast marketplace features more
-			than 4,000 quality products listed by thousands of sellers.
-		</p>
-		<p class="text-center text-xl md:text-2xl my-[1rem]">
-			To date, we’ve paid out more than $6 billion in affiliate commissions, and we’ve never missed a payment to
-			anyone. Take the uncertainty out of affiliate marketing – grow your business with ClickBank.
-		</p>
-	</div>
-
-	<div class="bg-[#2c20df] text-white mt-10">
-		<div class="container mx-auto">
-			<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 col-span-4 text-center py-10 gap-12">
-				<div class="col-span-1 text-5xl font-bold">
-					4,000+
-					<p class="text-lg">Marketplace Products</p>
-				</div>
-				<div class="col-span-1 text-5xl font-bold">
-					$6B
-					<p class="text-lg">n Commissions Paid</p>
-				</div>
-				<div class="col-span-1 text-5xl font-bold">
-					90%
-					<p class="text-lg">Potential Commission Paid</p>
-				</div>
-				<div class="col-span-1 text-5xl font-bold">
-					0
-					<p class="text-lg">Missed Payments</p>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="mt-24 container mx-auto">
-		<h2 class="text-center text-2xl font-bold">Top Product Categories Offered on ClickBank</h2>
-		<div class="owl-carousel mt-3">
-			<img src="img/HealthCategory-1.webp" />
-			<img src="img/SelfHelpCategory-1.webp" />
-			<img src="img/EBizCategory-1.webp" />
-			<img src="img/HomeCategory-1.webp" />
-			<img src="img/SportsCategory-1.webp" />
-		</div>
-	</div>
-
-	<div class="container mx-auto flex flex-col items-center">
-		<button class="bg-[#2c20df] text-white px-10 py-3 rounded -mt-3 font-semibold">Join ClickBank</button>
-	</div>
-
-	<div class="my-[5rem] w-11/12 mx-auto w-[80%]">
-		<h2 class="flex justify-center text-4xl font-bold text-[#10069f]">
-			Get Paid.
-			<p class="text-[#333] ml-2">Your Way</p>
-		</h2>
-
-		<div class="grid grid-cols-1 md:grid-cols-2 col-span-2 gap-12 mt-5">
-			<div class="col-span-1 bg-gray-100 rounded-[24px] shadow-lg">
-				<div class="py-5">
-					<img src="img/Rev_Share.webp" width="350px" class="mx-auto" />
-					<div class="px-14">
-						<h2 class="text-2xl font-semibold text-center">Revenue Sharing</h2>
-						<li class=" space-y-1">Get Paid a Percentage of Each Sale</li>
-						<li class=" space-y-1">Earn More Cash With Upsells</li>
-						<li class=" space-y-1">Generate Recurring Revenue With Rebills</li>
-						<div class="flex flex-col items-center ">
-							<button class="bg-[#2c20df] text-white px-10 py-3 rounded mt-5 font-semibold">Start
-								Here</button>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div class="col-span-1 bg-gray-100 rounded-[24px] px-2 py-2 shadow-lg">
-				<div class="py-5">
-					<img src="img/CPA-1-1.webp" width="350px" class="mx-auto" />
-					<div class="px-14">
-						<h2 class="text-2xl font-semibold text-center">Cost Per Action (CPA)</h2>
-						<li class=" space-y-1">Get Paid a Set Dollar Amount</li>
-						<li class=" space-y-1">Scale Faster With Ad Spend</li>
-						<li class=" space-y-1">Earnings Guaranteed (no refunds)</li>
-						<div class="flex flex-col items-center">
-							<button class="bg-[#2c20df] text-white px-10 py-3 rounded mt-5 font-semibold">Start
-								Here</button>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-
-
-	<div class="my-5 w-11/12 mx-auto grid grid-cols-1 md:grid-cols-2 gap-6 w-[80%]">
-		<div class="md:col-span-1  my-auto">
-			<p class="uppercase text-[#10069f] text-xl font-bold text-center ">free course</p>
-			<h1 class="font-bold text-4xl text-center my-5">
-				How to Get Started as an Affiliate in 2023
-			</h1>
-			<p class="text-xl font-semibold text-center">
-				Ready to earn your first paycheck in half the time?
-				<span class="font-normal">We specifically designed this course to get you up and running as a
-					ClickBank affiliate as quickly and efficiently as possible.</span>
-				The best part? It’s FREE!
-			</p>
-			<div class="flex justify-center">
-				<button class="bg-[#2c20df] text-white px-10 py-3 mt-10 rounded font-bold uppercase">enroll now</button>
-			</div>
-		</div>
-
-		<div class="my-auto w-full h-full">
-			<div id="thumbnailContainer" class=" inset-0 flex items-center justify-center cursor-pointer">
-				<img src="https://i.vimeocdn.com/video/1650206280-5b7994e204cdf116944094a8235d89fc6ed47bca6b1475f88ddd458f8dc4cbe5-d.jpg?mw=80&q=85"
-					class="w-full h-full object-cover" id="thumbnail">
-			</div>
-			<div id="videoContainer" class="hidden  inset-0">
-				<video class="w-full h-full object-cover" controls>
-					<source src="" type="video/mp4">
-				</video>
-			</div>
-		</div>
-	</div>
-
-	<div class="my-5 bg-[#2c20df]">
-		<div class="w-11/12 mx-auto w-[80%]">
-			<div class="grid  grid-cols-1 md:grid-cols-2 mx-auto py-10">
-				<div class="col-span-1">
-					<p class="text-white text-2xl mt-5">Subscribe and get affiliate marketing strategies sent straight
-						to your inbox every month!</p>
-				</div>
-				<div class="col-span-1 my-4">
-					<input type="text" placeholder="Email Address"
-						class="w-full h-[45px] px-5 bg-[#2c20df] border-b-2 border-white text-white">
-					<button
-						class="uppercase w-full mt-5 py-3 text-white hover:text-black hover:bg-white font-semibold border border-slate-300 rounded-md">Subscribe</button>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<!--FOOTER-->
-	<div class="w-11/12 mx-auto my-[3rem] lg:w-[80%]">
-		<div class="w-11/12 mx-auto grid grid-cols-1 lg:grid-cols-2 text-xl cursor-pointer mx-[4rem]">
-			<div class="col-span-1 mx-auto lg:text-left">
-				<img src="img/clickbank.webp" class="mx-auto md:mx-0" />
-				<div class="w-full space-x-8">
-					<ul class="py-3 flex justify-center lg:justify-start py-4">
-						<li class="inline-block p-1">
-							<img src="img/facebook.png" width="30" />
-						</li>
-						<li class="inline-block p-1">
-							<img src="img/twitter.png" width="30" />
-						</li>
-						<li class="inline-block p-1">
-							<img src="img/instagram.png" width="30" />
-						</li>
-						<li class="inline-block p-1">
-							<img src="img/youtube.png" width="30" />
-						</li>
-						<li class="inline-block p-1">
-							<img src="img/linkedin.png" width="30" />
-						</li>
-					</ul>
-				</div>
-
-			</div>
-			<div class="grid grid-cols-1 lg:grid-cols-3 gap-6">
-				<div class=" text-center lg:text-left mb-[1.5rem] ">
-					<p class="text-xl font-semibold">Earn with ClickBank</p>
-					<ul class="py-2 md:space-y-2 ">
-						<li class="text-[#333] hover:text-black">Affiliate</li>
-						<li class="text-[#333] hover:text-black">Sell Your Product</li>
-						<li class="text-[#333] hover:text-black">Client Support</li>
-					</ul>
-				</div>
-				<div class=" text-center lg:text-left mb-[1.5rem]">
-					<p class="text-xl font-semibold ">Learn with ClickBank</p>
-					<ul class="py-2 space-y-2">
-						<li class="text-[#333] hover:text-black">Affiliate Marketing Courses</li>
-						<li class="text-[#333] hover:text-black">YouTube Channel</li>
-						<li class="text-[#333] hover:text-black">Blog</li>
-						<li class="text-[#333] hover:text-black">How To Make Money Online</li>
-						<li class="text-[#333] hover:text-black">What Is Affiliate Marketing?</li>
-					</ul>
-				</div>
-				<div class=" text-center lg:text-left mb-[1.5rem]">
-					<p class="text-xl font-semibold">Company</p>
-					<ul class="py-2 space-y-2">
-						<li class="text-[#333] hover:text-black">About ClickBank</li>
-						<li class="text-[#333] hover:text-black">Careers</li>
-						<li class="text-[#333] hover:text-black">Partners</li>
-						<li class="text-[#333] hover:text-black">Integrations</li>
-						<li class="text-[#333] hover:text-black">ClickBank Merchandise</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-
-		<div class="w-11/12 mx-auto my-5 text-center lg:text-left ">
-			<p class="text-xl">
-				®Clickbank. All rights Reserved.
-				<span class="px-1 ml-1 text-[#0d6efd] hover:text-[#2c20df] border-l border-[#666] last:border-r-0">Terms
-					of Use</span>
-				<span class="px-1 text-[#0d6efd] hover:text-[#2c20df] border-l border-[#666] last:border-r-0">Privacy
-					Policy</span>
-			</p>
-
-			<div class="py-10">
-				<p class="">
-					ClickBank is the retailer of products on this site. ClickBank and Spark by ClickBank are registered
-					trademarks of Click Sales, Inc., a Delaware corporation located at 1444 S. Entertainment Ave. Suite
-					410 Boise, Idaho 83709 USA and used by permission. ClickBank’s role as a retailer does not
-					constitute an endorsement, approval or review of these products or any claim, statement or opinions
-					used in the promotion of these products.
-				</p>
-			</div>
-		</div>
-	</div>
-
-	<script>
-		$(document).ready(function () {
-			$('.owl-carousel').owlCarousel({
-				items: 2,
-				loop: true,
-				margin: 10,
-				responsive: {
-					0: {
-						items: 1
-					},
-					600: {
-						items: 3
-					},
-					1000: {
-						items: 4
-					}
-				}
-			});
-		});
-	</script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.owl-carousel').owlCarousel({
+                items: 2,
+                loop: true,
+                margin: 10,
+                responsive: {
+                    0: {
+                        items: 1
+                    },
+                    600: {
+                        items: 3
+                    },
+                    1000: {
+                        items: 4
+                    }
+                }
+            });
+        });
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
 
 </body>
 
